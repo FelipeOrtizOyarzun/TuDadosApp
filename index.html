@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--Указание языка: -->
+<html lang="ru">
+
+<head>
+    <!--Кодировка страницы (в HTML5): -->
+    <meta charset="utf-8">
+    <!--Настройки адаптивности страницы: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Заголовок страницы в браузере: -->
+    <title>Итоговое задание к курсу &#171;Современные технологии верстки&#187;</title>
+
+    <!--Подключение шрифтов Philosopher и Roboto: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+
+    <!--Подключение библиотеки иконок Bootstrap: -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> -->
+
+    <!--Подключение шрифтов Font Awesome: -->
+    <!--<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Подключение стилевых файлов: -->
+    <!--Файл Bootstrap со стилями адаптивной сетки из 12 колонок. Он также содержит
+        библиотеку сброса Reboot.css, основанную на Normalize.css. Bootstrap
+        использует ее для сброса стилей браузера по умолчанию и придания
+        веб-страницам единообразного вида: -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Файл со стилями пользователя загружается последним и может переопределить
+        стили любых библиотек: -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Подключение библиотек JavaScript (Bootstrap Bundle with Popper).
+        Атрибут defer откладывает выполнение скрипта до тех пор, пока
+        вся страница не будет загружена полностью: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+
+    <!--Шапка с навигационной панелью (Header with Navigation Bar) -->
+
+    <header>
+
+        <div class="header-top">
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+
+                        <a href="#" target="_blank" class="header__link">Перейти на&nbsp;сайт образовательного
+                            центра</a>
+
+                    </div>
+                    <div class="col-4">
+
+                        <ul class="nav justify-content-end socialmenu">
+                            <li class="nav-item socialmenu_item">
+                                <a href="#" title="ВКонтакте" target="_blank">
+                                    <i class="fab fa-vk align-middle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item socialmenu_item">
+                                <a href="#" title="Facebook" target="_blank">
+                                    <i class="fab fa-facebook-f align-middle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item socialmenu_item">
+                                <a href="#" title="Instagram" target="_blank">
+                                    <i class="fab fa-instagram align-middle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item socialmenu_item">
+                                <a href="#" title="Twitter" target="_blank">
+                                    <i class="fab fa-twitter align-middle"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <!--Навигационная панель (Navigation Bar) -->
+                    <nav>
+                        <ul class="nav justify-content-end header__menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">
+                                    О&nbsp;КУРСЕ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fas fa-circle"></i>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    ПРЕПОДАВАТЕЛИ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fas fa-circle"></i>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">
+                                    ОТЗЫВЫ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fas fa-circle"></i>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#questions">
+                                    ВОПРОСЫ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Тег <main> предназначен для основного содержимого документа (основной контент). Контент внутри
+         элемента должен быть уникальным для всего документа и не должен содержать элементы, которые
+         повторяются в различных документах (боковые панели, навигационные ссылки, информация об авторских
+         правах, логотип сайта, формы поиска и тому подобное). Допускается использование элемента только
+         один раз в одном документе. -->
+    <main>
+
+        <!--Главный раздел (Main Section) -->
+
+        <section id="main" class="text-end">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h1 class="main__header">Дизайн и&nbsp;верстка полиграфической продукции<br>в&nbsp;ADOBE
+                            ILLUSTRATOR
+                        </h1>
+                        <p>Повышение квалификации, 35&nbsp;ак. часов</p>
+                        <button class="rounded-pill main__btn">Записаться на&nbsp;курс</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- О курсе (About Section) -->
+
+        <section id="about">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2 class="section__header">
+                            О&nbsp;КУРСЕ
+                        </h2>
+                        <div class="about__description">
+                            <p class="about__description_mb">На&nbsp;курсе&nbsp;Вы научитесь работать
+                                с&nbsp;компьютерной программой Adobe Illustrator, выполняя реальные проекты
+                                с&nbsp;первого дня обучения. Понимание теории в&nbsp;основном происходит через практику.
+                                Шаг за&nbsp;шагом, в&nbsp;течение обучения, Вы&nbsp;создадите свое портфолио,
+                                позволяющее начать работать сразу после окончания курса.
+                            </p>
+                            <p class="about__description_spacing mb-0">Очное обучение проходит по&nbsp;расписанию
+                                в&nbsp;вечерние часы (18.30&ndash;21.50) 1-2 раза в&nbsp;неделю.
+                            </p>
+                            <p class="text-center">
+                                Дистанционное обучение&nbsp;&mdash; по&nbsp;индивидуальному календарному плану.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-center about__info">
+
+                        <img class="about__info_image" src="images/icon-diploma.png" width="110" height="99"
+                            alt="Выдаваемый документ">
+                        <h3 class="about__info_header">Выдаваемый документ</h3>
+                        <p class="about__info_details">Удостоверение о&nbsp;повышении<br>квалификации</p>
+
+                    </div>
+                    <div class="col-4 text-center about__info">
+
+                        <img class="about__info_image" src="images/icon-graduate_cap.png" width="90" height="119"
+                            alt="Форма обучения">
+                        <h3 class="about__info_header">Форма обучения</h3>
+                        <p class="about__info_details">Очная<br>Дистанционная</p>
+
+                    </div>
+                    <div class="col-4 text-center about__info">
+
+                        <img class="about__info_image" src="images/icon-cash.png" width="90" height="90"
+                            alt="Стоимость обучения">
+                        <h3 class="about__info_header">Стоимость обучения</h3>
+                        <p class="about__info_details">Очная форма: 10&nbsp;000&nbsp;р.<br>Дистанционная форма:
+                            7&nbsp;000&nbsp;р.<br>Возможность поэтапной оплаты</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Преимущества (Features Section) -->
+
+        <section id="features">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center">
+
+                        <h2 class="section__header">
+                            ПРЕИМУЩЕСТВА
+                        </h2>
+                        <!-- Выравнивание можно добавить и здесь: d-flex flex-column flex-wrap align-content-center -->
+                        <ul class="features__list">
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Обучение в престижном ВУЗе</li>
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Гибкие условия оплаты</li>
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Возможность тестового периода
+                                обучения</li>
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Индивидуальный график</li>
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Портфолио по окончании курса
+                            </li>
+                            <li><i class="far fa-check-circle features__list-bullet"></i>Практикующие преподаватели</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Вопросы и ответы (Questions Section) -->
+
+        <section id="questions">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2 class="section__header">
+                            ВОПРОСЫ
+                        </h2>
+
+                        <div class="accordion accordion-flush" id="questions__accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Могу&nbsp;ли я&nbsp;оплатить не&nbsp;всю сумму сразу, а&nbsp;платить
+                                        в&nbsp;течение всего срока обучения? И&nbsp;как происходит оплата?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#questions__accordion">
+                                    <div class="accordion-body">Да, конечно! У&nbsp;нас предусмотрена поэтапная оплата
+                                        обучения. Вы&nbsp;можете разбить сумму на&nbsp;2-8&nbsp;частей. График платежей
+                                        будет указан при заключении договора. Стоимость курса при этом остается
+                                        постоянной на&nbsp;весь срок обучения. Реквизиты счета будут указаны
+                                        в&nbsp;договоре на&nbsp;обучение.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Отличается&nbsp;ли диплом при прохождении курса в&nbsp;очной форме
+                                        и&nbsp;в&nbsp;режиме экстерната?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#questions__accordion">
+                                    <div class="accordion-body">Нет, дипломы не&nbsp;отличаются на&nbsp;основании
+                                        приказа Министерства образования и&nbsp;науки Российской Федерации
+                                        от&nbsp;9&nbsp;января 2014&nbsp;г. N&nbsp;2&nbsp;г. Москва
+                                        &laquo;Об&nbsp;утверждении Порядка применения организациями, осуществляющими
+                                        образовательную деятельность, электронного обучения, дистанционных
+                                        образовательных технологий при реализации образовательных программ&raquo;.
+                                        Посмотреть, как выглядит диплом, можно перейдя по&nbsp;ссылке
+                                        <a href="https://design.ifmo.ru/diploms/?is_page=prof_new" target="_blank"
+                                            class="questions__link">https://design.ifmo.ru/diploms/?is_page=prof_new</a>.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Когда начинается дистанционное обучение?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#questions__accordion">
+                                    <div class="accordion-body">Дистанционное обучение по&nbsp;любому курсу является
+                                        индивидуальным&nbsp;&mdash; вы&nbsp;и&nbsp;преподаватель. Поэтому начать
+                                        обучение можно в&nbsp;любое удобное для Вас время! Вас подключат к&nbsp;системе
+                                        дистанционного обучения сразу после заключения договора и&nbsp;оплаты первого
+                                        этапа. Возможно предоставление тестового доступа.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questions__knowmore text-center">Не&nbsp;нашли ответа на&nbsp;свой вопрос?</div>
+                        <div class="text-center"><a href="#" target="_blank" class="questions__asklink ">Спросить
+                                здесь</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Отзывы (Reviews Section) -->
+
+        <section id="reviews">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2 class="section__header">
+                            ОТЗЫВЫ
+                        </h2>
+                        <div id="reviews__carousel_controls" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active container-fluid reviews__item text-center">
+                                    <p class="reviews__item_content">
+                                        &laquo;Будучи мамой двух детей, я&nbsp;выбрала дистанционную форму обучения
+                                        по&nbsp;курсу &bdquo;Дизайн и&nbsp;верстка полиграфической продукции&ldquo;
+                                        и&nbsp;училась ежедневно, пока дети были в&nbsp;школе. Обучение заняло
+                                        у&nbsp;меня чуть больше 6&nbsp;месяцев. Очень понравилась практическая
+                                        направленность обучения&nbsp;&mdash; ты&nbsp;с&nbsp;первого дня творишь! Сначала
+                                        простые объекты, а&nbsp;потом целые брендбуки. Здорово, что есть видео-поддержка
+                                        одного из&nbsp;самых сложных курсов&nbsp;&mdash; CorelDraw. Очень благодарна
+                                        Александру Викторовичу за&nbsp;оперативность, справедливую критику и&nbsp;очень
+                                        полезные советы. Я&nbsp;считаю его своим наставником и&nbsp;даже закончив курс,
+                                        иногда прошу его оценить мои работы, но&nbsp;уже не&nbsp;учебные,
+                                        а&nbsp;настоящие. Меня очень увлек фриланс. Он&nbsp;позволяет совмещать работу
+                                        и&nbsp;семейные хлопоты, позволяет развиваться и&nbsp;самореализоваться. Одним
+                                        словом&nbsp;&mdash; СПАСИБО!&raquo;
+                                    </p>
+                                    <img class="reviews__item_photo" src="images/voroncova.jpg" width="110" height="110"
+                                        alt="Ольга Воронцова">
+                                    <p class="reviews__item_person">
+                                        Ольга Воронцова<br>выпуск 2015
+                                    </p>
+                                </div>
+
+                                <div class="carousel-item container-fluid reviews__item text-center">
+                                    <p class="reviews__item_content">
+                                        &laquo;Я&nbsp;только что закончила курс по&nbsp;специальности &bdquo;Дизайн
+                                        и&nbsp;верстка полиграфической продукции&ldquo;&nbsp;&mdash; сейчас я&nbsp;жду,
+                                        пока оформят официальный документ. Понятные и&nbsp;подробные лекции, развернутая
+                                        обратная связь, достаточно строгий приём работ&nbsp;&mdash; всё это не&nbsp;для
+                                        того, чтобы ученики &bdquo;поучились&ldquo;, но&nbsp;для того, чтобы научились.
+                                        Дипломная работа показала, как всё связано, в&nbsp;процессе её&nbsp;написания
+                                        я&nbsp;не&nbsp;раз обращалась к&nbsp;лекциям курса. Практические работы
+                                        интересные и&nbsp;полезные&nbsp;&mdash; после них ты&nbsp;действительно можешь
+                                        что-то сделать. И&nbsp;сделать хорошо. Курс &bdquo;Дизайн и&nbsp;верстка
+                                        полиграфической продукции&ldquo; дал мне не&nbsp;только знания для освоения
+                                        новой специальности, но&nbsp;и&nbsp;уверенность в&nbsp;том, что всё получится.
+                                        Спасибо составителям курса и&nbsp;преподавателям: Александру Викторовичу
+                                        Флёрову, Юлии Безбах и&nbsp;Дарье Поляковой.&raquo;
+                                    </p>
+                                    <!-- Image source: https://design.itmo.ru/courses/illustrator/?page=#reviewPage -->
+                                    <img class="reviews__item_photo" src="images/policarpova.jpg" width="110"
+                                        height="110" alt="Татьяна Поликарпова">
+                                    <p class="reviews__item_person">
+                                        Татьяна Поликарпова<br>выпуск 2020
+                                    </p>
+                                </div>
+
+                            </div>
+                            <!-- Кнопка, прокручивающая карусель влево: -->
+                            <button class="carousel-control-prev align-items-start" type="button"
+                                data-bs-target="#reviews__carousel_controls" data-bs-slide="prev">
+                                <i class="fas fa-angle-left reviews__carousel_icon"></i>
+                            </button>
+                            <!-- Кнопка, прокручивающая карусель вправо: -->
+                            <button class="carousel-control-next align-items-start" type="button"
+                                data-bs-target="#reviews__carousel_controls" data-bs-slide="next">
+                                <i class="fas fa-angle-right reviews__carousel_icon"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Контакты (Contacts Section) -->
+
+        <section id="contacts">
+
+            <!-- container-fluid занимает всю доступную область просмотра при любых значениях ширины экрана: -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2 class="section__header">
+                            СВЯЗАТЬСЯ С НАМИ
+                        </h2>
+                        <div class="contacts__site d-flex flex-row flex-wrap justify-content-between">
+                            Образовательный центр
+                            <img class="contacts_image" src="images/arrow.svg" width="251" height="45"
+                                alt="Перейти на&nbsp;основной сайт">
+                            <a class="contacts__site_link" href="#" target="_blank">Перейти на&nbsp;основной сайт</a>
+                        </div>
+                        <div class="contacts__social text-center">
+                            <h3 class="contacts__social__title">Мы&nbsp;в&nbsp;соц. сетях:</h3>
+                            <ul class="nav justify-content-center socialmenu">
+                                <li class="nav-item socialmenu_item">
+                                    <a href="#" title="ВКонтакте" target="_blank">
+                                        <i class="fab fa-vk align-middle"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item socialmenu_item">
+                                    <a href="#" title="Facebook" target="_blank">
+                                        <i class="fab fa-facebook-f align-middle"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item socialmenu_item">
+                                    <a href="#" title="Instagram" target="_blank">
+                                        <i class="fab fa-instagram align-middle"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item socialmenu_item">
+                                    <a href="#" title="Twitter" target="_blank">
+                                        <i class="fab fa-twitter align-middle"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!--Подвал (Footer) -->
+
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+
+                    <p class="footer__copyright">&copy;&nbsp;2018 Образовательный центр</p>
+                    <p class="footer__copyright footer__copyright_mb">Любое использование материалов допускается только
+                        при соблюдении правил перепечатки и&nbsp;при наличии гиперссылки</p>
+                    <a href="#" target="_blank" class="footer__link">Политика организации в&nbsp;отношении обработки
+                        персональных данных</a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+</html>
