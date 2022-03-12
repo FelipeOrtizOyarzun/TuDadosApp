@@ -4,7 +4,7 @@
 </div>
 <br>
 
-> Aplicación desarrollada en Kotlin que arroja 2 dados al azar
+    Aplicación desarrollada en Kotlin que arroja 2 dados al azar
 
 ## Instalación
 - Android Studio
@@ -12,7 +12,7 @@
 - Clonar el repositorio en tu ordenador
 
 ## Como usarlo
-    > Al ejecutar la aplicación mostrara un boton para lanzar los dados
+> Al ejecutar la aplicación mostrara un boton para lanzar los dados
 
 ## Conceptos empleados: 
 - Manejo de recursos de imagen
