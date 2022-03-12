@@ -1,9 +1,18 @@
 # TusDadosApp
-<div>
+<div align="center">
 <img src="https://user-images.githubusercontent.com/32887258/157932915-1fa9e9c2-818c-412f-8e7e-a65077b7928b.png" width="150" height="150"/>
 </div>
-Aplicación que arroja dados
 
-## Conceptos: 
+> Aplicación desarrollada en Kotlin que arroja 2 dados al azar
+
+## Instalación
+- Android Studio
+- Git
+- Clonar el repositorio en tu ordenador
+
+## Como usarlo
+> Al ejecutar la aplicación mostrara un boton para lanzar los dados
+
+## Conceptos empleados: 
     - Manejo de recursos de imagen
     - Tipo de dato range y funcion .random()
