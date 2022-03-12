@@ -1,6 +1,6 @@
 # TusDadosApp
 <div align="center">
-<img src="https://user-images.githubusercontent.com/32887258/157932915-1fa9e9c2-818c-412f-8e7e-a65077b7928b.png" width="150" height="150"/>
+    <img src="https://user-images.githubusercontent.com/32887258/157932915-1fa9e9c2-818c-412f-8e7e-a65077b7928b.png" width="150" height="150"/>
 </div>
 <br>
 
@@ -12,8 +12,8 @@
 - Clonar el repositorio en tu ordenador
 
 ## Como usarlo
-> Al ejecutar la aplicación mostrara un boton para lanzar los dados
+    > Al ejecutar la aplicación mostrara un boton para lanzar los dados
 
 ## Conceptos empleados: 
-    - Manejo de recursos de imagen
-    - Tipo de dato range y funcion .random()
+- Manejo de recursos de imagen
+- Tipo de dato range y funcion .random()
