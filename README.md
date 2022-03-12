@@ -14,6 +14,6 @@
 ## Como usarlo
 > Al ejecutar la aplicación mostrara un boton para lanzar los dados
 
-## Conceptos empleados: 
+## Conceptos empleados 
 - Manejo de recursos de imagen
 - Tipo de dato range y funcion .random()
