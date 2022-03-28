@@ -7,9 +7,9 @@
     Aplicación desarrollada en Kotlin que arroja 2 dados al azar
 
 ## Instalación
-- Android Studio
-- Git
-- Clonar el repositorio en tu ordenador
+- Tener instalado Android Studio
+- Clonar repositorio
+- Ejecutar el proyecto
 
 ## Como usarlo
 > Al ejecutar la aplicación mostrara un boton para lanzar los dados
